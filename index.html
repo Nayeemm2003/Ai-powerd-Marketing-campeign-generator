@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="signup.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="left-nav">
+        <div class="logo">
+          <img src="logo1.png" alt="">
+        </div>
+        <div class="toggle-menu">
+          <i class="fa-solid fa-sliders" id="slide-menu"></i>
+          <ul class="show">
+            <li>
+              <a href="#">Research</a><i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li><a href="#">Name</a><i class="fa-solid fa-angle-right"></i></li>
+            <li>
+              <a href="#">For Business</a
+              ><i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#">Performance</a><i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#">Introduction</a
+              ><i class="fa-solid fa-angle-right"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="login">
+          <a href="#">Log in</a>
+          <ul id="loginList">
+            <li><a href="#" id="openForm">Reach Matrix</a></li>
+            <li><a href="#">API Platform</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="hero container">
+      <div class="watermark">
+        <img src="bglogo.png" alt="">
+      </div>
+      <div class="welcome-login">
+        <i class="fa-solid fa-xmark" id="closeWelcomeLoginForm"></i>
+        <h2>Welcome</h2>
+        <p>Log in or sign up to get smarter responses and more.</p>
+        <div class="welcome-login-btns">
+          <button id="log-in">Log In</button>
+          <button id="sign-up">Sign Up</button>
+          <button id="stayLoggedOut">Stay Logged Out</button>
+        </div>
+      </div>
+      <div class="loginForm">
+        <i class="fa-solid fa-xmark" id="closeForm"></i>
+        <div class="Border-style">
+          <label for="email"><i class="fa-solid fa-envelope"></i> </label
+          ><input
+            type="email"
+            placeholder="Email"
+            class="style1"
+            id="log-email"
+          />
+        </div>
+        <div class="Border-style">
+          <label for="password"><i class="fa-solid fa-lock"></i></label
+          ><input
+            type="password"
+            placeholder="Password"
+            class="style1"
+            id="log-password"
+          />
+        </div>
+        <div class="submit-btn">
+          <button id="log-submit">Login</button>
+        </div>
+
+        <div class="loginOr">
+          <span class="halfRow"></span>
+          <p>OR</p>
+          <span class="halfRow"></span>
+        </div>
+        <div class="forget-password">
+          <p>Don't have an account? <a href="#" id="signUp">Sign Up</a></p>
+        </div>
+      </div>
+      <div class="signUpForm">
+        <i class="fa-solid fa-xmark" id="closeForm2"></i>
+        <div class="Border-style">
+          <label for="name"><i class="fa-solid fa-user"></i> </label
+          ><input type="text" placeholder="Enter Your Name" class="style1" />
+        </div>
+        <div class="Border-style">
+          <label for="email"><i class="fa-solid fa-envelope"></i> </label
+          ><input
+            type="email"
+            placeholder="Email"
+            id="sign-email"
+            class="style1"
+          />
+        </div>
+        <div class="Border-style">
+          <label for="password"><i class="fa-solid fa-lock"></i></label
+          ><input
+            type="password"
+            placeholder="Password"
+            id="sign-password"
+            class="style1"
+          />
+        </div>
+        <div class="submit-btn">
+          <button id="sign-submit">Sign Up</button>
+        </div>
+        <div class="forget-password">
+          <p>Already have an account? <a href="#" id="LogIn">Log In</a></p>
+        </div>
+
+        <div class="loginOr">
+          <span class="halfRow"></span>
+          <p>OR</p>
+          <span class="halfRow"></span>
+        </div>
+        <div class="loginbtns">
+          <button id="google-signUp">
+            <i class="fa-brands fa-google"></i> Continue With Google
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <div class="launch">
+          <h4>June 21,2025 <span>Product</span></h4>
+        </div>
+        <div class="main-heading">
+          <h1>Scale Your Business With</h1>
+          <h1>Reach Matrix</h1>
+          <h3>( An AI Powerd System That Genarate Marketing Campaignes )</h3>
+        </div>
+        <div class="main-btns">
+          <a href="workspace.html"
+            >Try Reach Matrix
+            <i
+              class="fa-solid fa-arrow-right fa-rotate-by"
+              style="--fa-rotate-angle: 310deg"
+            ></i
+          ></a>
+          <a href="workspace.html">
+            Try Reach Matrix For Work <i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="ask-ReachMatrix">
+        <input type="text" placeholder="Enter Your Business Details" />
+        <div class="angle-up"><i class="fa-solid fa-arrow-up"></i></div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

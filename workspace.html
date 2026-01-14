@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="workspace.css" />
+    <script type="module" src="signup.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="left-nav">
+        <div class="logo">
+          <img src="logo1.png" alt="">
+        </div>
+        <div class="menu-slider">
+          <i class="fa-solid fa-sliders"></i>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="login">
+          <i class="fa-solid fa-user"></i>
+          <!-- <div class="userdropdown">
+    <h4>Email :</h4>
+    <p id="userEmail"></p>
+                </div> -->
+        </div>
+      </div>
+    </div>
+    <section class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-0 col-md-2">
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="#" class="newChat"
+                    ><i class="fa-brands fa-rocketchat"></i> New Chats</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="search-chat"
+                    ><i class="fa-solid fa-magnifying-glass"></i> Search
+                    Chats</a
+                  >
+                </li>
+                <li><a href="#" class="intro">Introduction</a></li>
+              </ul>
+              <div class="chats">
+                <p>Chats</p>
+                <ul id="history"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-10 right-section">
+            <div class="main-input">
+              <div class="chat-container">
+                <div class="output">
+                  <span id="userdescription">Userdescription</span>
+                </div>
+                <div id="chatOutput">
+                  <!-- Dynamic messages will appear here -->
+                </div>
+              </div>
+              <div class="textarea">
+                <div class="btn">
+                  <a href="#" id="formOpen">Click Me To Get Things Started</a>
+                </div>
+                <div class="icon">
+                  <div id="add-documents">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div id="mic">
+                    <i class="fa-solid fa-microphone"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="result">
+                    <h1>result</h1>
+                    <div class="userdescription"></div>
+                    <div class="output"></div>
+                </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="watermark">
+        <img src="bglogo.png" alt="">
+      </div> -->
+    </section>
+    <div class="container r-form">
+              <i class="fa-solid fa-xmark" id="closeForm3"></i>
+      <h1>Campaign Generator</h1>
+
+      <form id="campaignForm">
+        <input type="text" id="product" placeholder="Product Name" required />
+        <textarea
+          id="description"
+          placeholder="Product Description"
+          required
+        ></textarea>
+        <input
+          type="text"
+          id="audience"
+          placeholder="Target Audience"
+          required
+        />
+
+        <select id="tone">
+          <option value="Friendly">Friendly</option>
+          <option value="Professional">Professional</option>
+          <option value="Bold">Bold</option>
+        </select>
+
+        <select id="goal">
+          <option value="Awareness">Awareness</option>
+          <option value="Leads">Leads</option>
+          <option value="Sales">Sales</option>
+        </select>
+
+        <h3>Select Platform</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="Email" /> Email</label>
+          <label><input type="checkbox" value="Facebook" /> Facebook</label>
+          <label><input type="checkbox" value="Instagram" /> Instagram</label>
+        </div>
+
+        <button type="submit" id="submit">Generate Campaign</button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="workspace.js"></script>
+  </body>
+</html>
